@@ -13,10 +13,10 @@ import io.swagger.v3.oas.models.security.SecurityScheme;
 
 
 @SpringBootApplication
-public class ECommerceBackendApplication {
+public class hstoreBackendApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ECommerceBackendApplication.class, args);
+		SpringApplication.run(hstoreBackendApplication.class, args);
 	}
 	
 	@Bean
@@ -24,7 +24,7 @@ public class ECommerceBackendApplication {
 	   return new OpenAPI()
 	    .components(new Components().addSecuritySchemes("basicScheme",
 	            new SecurityScheme().type(SecurityScheme.Type.HTTP).scheme("basic")))
-	    .info(new Info().title("E-Commerce Application REST API").version(appVersion)
+	    .info(new Info().title("h-store Application REST API").version(appVersion)
 	            .license(new License().name("Apache 2.0").url("http://springdoc.org")));
 	}
 
